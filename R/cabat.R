@@ -80,7 +80,7 @@ cabat <- function(
   num_items = 25L,
   take_training = TRUE,
   label = "BAT",
-  feedback = cabat.feedback.no_score(),
+  feedback = cabat.feedback.simple_score(),
   item_bank_audio = "https://media.gold-msi.org/test_materials/BAT/v1/audio",
   practice_items = "https://media.gold-msi.org/test_materials/BAT/v1/practice-items",
   next_item.criterion = "bOpt",

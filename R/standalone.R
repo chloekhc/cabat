@@ -22,17 +22,10 @@ standalone_cabat <- function(title = "Beat perception test",
                              dict = cabat::cabat_dict,
                              ...) {
   elts <- c(
-    psychTestR::new_timeline(
-      psychTestR::get_p_id(prompt = psychTestR::i18n("enter_p_id"),
-                           button_text = psychTestR::i18n("ABAT_0021_I_0001_1")),
-      dict = dict
-    ),
     cabat(dict = dict, ...),
-    psychTestR::elt_save_results_to_disk(complete = TRUE),
     psychTestR::new_timeline(
       psychTestR::final_page(shiny::p(
-        psychTestR::i18n("results_have_been_saved"),
-        psychTestR::i18n("you_may_close_browser")),
+        img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/24.jpg", width="100%")),
       ), dict = dict)
   )
 

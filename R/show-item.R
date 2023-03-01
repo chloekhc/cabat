@@ -26,5 +26,5 @@ get_prompt <- function(item_number, num_items_in_test) {
         num_question = item_number,
         test_length = num_items_in_test
       )))),
-    shiny::p(shiny::HTML(psychTestR::i18n("ABAT_0019_I_0001_1"))))
+    img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/22.jpg", width="100%"))
 }
