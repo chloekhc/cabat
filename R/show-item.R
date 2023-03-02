@@ -26,5 +26,5 @@ get_prompt <- function(item_number, num_items_in_test) {
         num_question = item_number,
         test_length = num_items_in_test
       )))),
-    img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/22.jpg", width="100%"))
+    img(src = "https://decpsychloe.me/img1/22.jpg", width="100%"))
 }

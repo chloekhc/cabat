@@ -11,7 +11,7 @@ practice <- function(practice_items) {
       list(
         psychTestR::audio_NAFC_page(
           label = "practice_question",
-          prompt = img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/14.jpg", width="100%"),
+          prompt = img(src = "https://decpsychloe.me/img1/14.jpg", width="100%"),
           url = file.path(practice_items, paste0(x$id, ".mp3")),
           choices = as.character(c(1, 2)),
           labels = lapply(c("ABAT_0010_I_0001_1", "ABAT_0015_I_0001_1"), psychTestR::i18n),
@@ -19,8 +19,8 @@ practice <- function(practice_items) {
         ),
         psychTestR::reactive_page(function(answer, ...) {
           psychTestR::one_button_page(
-            if (answer == x$answer) {img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/15.jpg", width="100%")}
-            else {img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/16.jpg", width="100%")},
+            if (answer == x$answer) {img(src = "https://decpsychloe.me/img1/15.jpg", width="100%")}
+            else {img(src = "https://decpsychloe.me/img1/16.jpg", width="100%")},
 
             button_text = psychTestR::i18n("ABAT_0021_I_0001_1")
           )}))}))

@@ -25,7 +25,7 @@ standalone_cabat <- function(title = "Beat perception test",
     cabat(dict = dict, ...),
     psychTestR::new_timeline(
       psychTestR::final_page(shiny::p(
-        img(src = "https://raw.githubusercontent.com/chloekhc/cabat/master/fig/24.jpg", width="100%")),
+        img(src = "https://decpsychloe.me/img1/24.jpg", width="100%")),
       ), dict = dict)
   )
 
