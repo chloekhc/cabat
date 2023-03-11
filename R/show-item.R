@@ -14,7 +14,8 @@ show_item <- function(item_bank_audio) {
       url = file.path(item_bank_audio, item$file_name),
       wait = TRUE,
       on_complete = NULL,
-      save_answer = FALSE
+      save_answer = FALSE,
+      autoplay = FALSE
     )
   }
 }

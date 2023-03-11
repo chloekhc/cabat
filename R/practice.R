@@ -15,7 +15,8 @@ practice <- function(practice_items) {
           url = file.path(practice_items, paste0(x$id, ".mp3")),
           choices = as.character(c(1, 2)),
           labels = lapply(c("ABAT_0010_I_0001_1", "ABAT_0015_I_0001_1"), psychTestR::i18n),
-          save_answer = FALSE
+          save_answer = FALSE,
+          autoplay = FALSE
         ),
         psychTestR::reactive_page(function(answer, ...) {
           psychTestR::one_button_page(
