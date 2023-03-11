@@ -18,4 +18,4 @@ Suggests:
     usethis (>= 1.5.1)
 Byte-Compile: yes
 RoxygenNote: 7.1.1
-Remotes: pmcharrison/psychTestR, pmcharrison/psychTestRCAT
+Remotes: chloekhc/psychTestR, pmcharrison/psychTestRCAT
