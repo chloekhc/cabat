@@ -27,5 +27,8 @@ get_prompt <- function(item_number, num_items_in_test) {
         num_question = item_number,
         test_length = num_items_in_test
       )))),
-    img(src = "https://decpsychloe.me/img1/22.jpg", width="100%"))
+    if (item_number==9) img(src = "https://decpsychloe.me/img1/25.jpg", width="100%")
+    else if (item_number==17) img(src = "https://decpsychloe.me/img1/26.jpg", width="100%")
+    else img(src = "https://decpsychloe.me/img1/22.jpg", width="100%")
+    )
 }
