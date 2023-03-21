@@ -58,8 +58,6 @@ intro <- function(practice_items, dict) {
       info_image_page("https://decpsychloe.me/img1/2.jpg"),
       info_image_page("https://decpsychloe.me/img1/3.jpg"),
       audio_ex_image_page("https://decpsychloe.me/img1/4.jpg", file.path(practice_items, "training1.mp3")),
-      info_image_page("https://decpsychloe.me/img1/6.jpg"),
-      info_image_page("https://decpsychloe.me/img1/7.jpg"),
       info_image_page("https://decpsychloe.me/img1/8.jpg"),
       video_page("https://decpsychloe.me/img1/video.mp4"),
       audio_ex_image_page1("https://decpsychloe.me/img1/9.jpg", file.path(practice_items, "training1.mp3")),
