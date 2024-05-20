@@ -20,7 +20,7 @@ practice <- function(practice_items) {
         ),
         psychTestR::reactive_page(function(answer, ...) {
           psychTestR::one_button_page(
-            if (answer == x$answer) {img(src = "https://github.com/chloekhc/cabat/blob/master/fig/15.jpg?raw=true, width="100%")}
+            if (answer == x$answer) {img(src = "https://github.com/chloekhc/cabat/blob/master/fig/15.jpg?raw=true", width="100%")}
             else {img(src = "https://github.com/chloekhc/cabat/blob/master/fig/16.jpg?raw=true", width="100%")},
 
             button_text = psychTestR::i18n("ABAT_0021_I_0001_1")
