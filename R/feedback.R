@@ -27,7 +27,7 @@ cabat.feedback.simple_score <- function(dict = cabat::cabat_dict) {
   psychTestR::new_timeline(
     psychTestR::reactive_page(function(answer, ...) {
       psychTestR::one_button_page(shiny::div(
-        img(src = "https://decpsychloe.me/img1/23.jpg", width="100%"),
+        img(src = "https://github.com/chloekhc/cabat/blob/master/fig/23.jpg?raw=true", width="100%"),
         shiny::p("Your score was:",
                  shiny::strong(round(answer$ability, digits = 2)))
       ))
