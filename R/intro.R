@@ -54,16 +54,16 @@ intro <- function(practice_items, dict) {
       psychTestR::code_block(function(state, ...) {
         psychTestR::set_local("do_intro", TRUE, state)
       }),
-      info_image_page("https://decpsychloe.me/img1/1.jpg"),
-      info_image_page("https://decpsychloe.me/img1/2.jpg"),
-      info_image_page("https://decpsychloe.me/img1/3.jpg"),
-      audio_ex_image_page("https://decpsychloe.me/img1/4.jpg", file.path(practice_items, "training1.mp3")),
-      info_image_page("https://decpsychloe.me/img1/8.jpg"),
-      video_page("https://decpsychloe.me/img1/video.mp4"),
-      audio_ex_image_page1("https://decpsychloe.me/img1/9.jpg", file.path(practice_items, "training1.mp3")),
-      audio_ex_image_page1("https://decpsychloe.me/img1/10.jpg", file.path(practice_items, "training2.mp3")),
-      info_image_page("https://decpsychloe.me/img1/12.jpg"),
-      info_image_page("https://decpsychloe.me/img1/13.jpg"),
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/1.jpg?raw=true"),
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/2.jpg?raw=true"),
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/3.jpg?raw=true"),
+      audio_ex_image_page("https://github.com/chloekhc/cabat/blob/master/fig/4.jpg?raw=true", file.path(practice_items, "training1.mp3")),
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/8.jpg?raw=true"),
+      video_page("https://github.com/chloekhc/cabat/blob/master/fig/video.mp4?raw=true"),
+      audio_ex_image_page1("https://github.com/chloekhc/cabat/blob/master/fig/9.jpg?raw=true", file.path(practice_items, "training1.mp3")),
+      audio_ex_image_page1("https://github.com/chloekhc/cabat/blob/master/fig/10.jpg?raw=true", file.path(practice_items, "training2.mp3")),
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/12.jpg?raw=true"),
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/13.jpg?raw=true"),
       psychTestR::while_loop(
         test = function(state, ...) psychTestR::get_local("do_intro", state),
         logic = c(
@@ -71,14 +71,14 @@ intro <- function(practice_items, dict) {
           practice(practice_items),
           ask_repeat()
         )),
-      info_image_page("https://decpsychloe.me/img1/21.jpg")
+      info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/21.jpg?raw=true")
     ), dict = dict)
 }
 
 ask_repeat <-function() {
   psychTestR::NAFC_page(
     label = "ask_repeat",
-    prompt = div(p(img(src = "https://decpsychloe.me/img1/20.jpg", width="100%")), p("")),
+    prompt = div(p(img(src = "https://github.com/chloekhc/cabat/blob/master/fig/20.jpg?raw=true", width="100%")), p("")),
 
     choices = c("go_back", "continue"),
     labels = lapply(c("ABAT_0022_I_0001_1", "ABAT_0021_I_0001_1"), psychTestR::i18n),
