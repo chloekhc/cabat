@@ -59,7 +59,6 @@ intro <- function(practice_items, dict) {
       info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/3.jpg?raw=true"),
       audio_ex_image_page("https://github.com/chloekhc/cabat/blob/master/fig/4.jpg?raw=true", file.path(practice_items, "training1.mp3")),
       info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/8.jpg?raw=true"),
-      video_page("https://github.com/chloekhc/cabat/blob/master/fig/video.mp4?raw=true"),
       audio_ex_image_page1("https://github.com/chloekhc/cabat/blob/master/fig/9.jpg?raw=true", file.path(practice_items, "training1.mp3")),
       audio_ex_image_page1("https://github.com/chloekhc/cabat/blob/master/fig/10.jpg?raw=true", file.path(practice_items, "training2.mp3")),
       info_image_page("https://github.com/chloekhc/cabat/blob/master/fig/12.jpg?raw=true"),
